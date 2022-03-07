@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<h1>Diary App by Django</h1>
-<h2><a href="{% url 'diary:diary_create' %}">日記の投稿</a></h2>
-<h2><a href="{% url 'diary:diary_list' %}">日記の一覧</a></h2>
+<h1 class="h1_index">~日記アプリ~</h1>
+<h2 class="h2_index"><a href="{% url 'diary:diary_create' %}">日記の投稿</a></h2>
+<h2 class="h2_index"><a href="{% url 'diary:diary_list' %}">日記の一覧</a></h2>
 {% endblock %}

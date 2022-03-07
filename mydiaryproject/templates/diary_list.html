@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
+<h1 class="title_list">~投稿一覧~</h1>
+<ul>
 {% for diary in diary_list %}
-<p>
-    {{ diary.date }}
+<li class="diar_list">
+    {{ diary.date }} /
     <a href="{% url 'diary:diary_detail' diary.pk %}">{{ diary.title }}</a>
-</p>
+</li>
 {% endfor %}
-<a href="{% url 'diary:index' %}">戻る</a>
+</ul>
+<a class="return_list" href="{% url 'diary:index' %}">戻る</a>
 {% endblock %}

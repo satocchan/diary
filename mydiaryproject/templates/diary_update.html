@@ -1,9 +1,22 @@
 {% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
 {% block content %}
-<h1>日記の編集</h1>
+<h1 class="h1_index">~日記の編集~</h1>
 <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="保存">
+    <div class="form-group">
+        <label>{{ form.date.label }}</label>
+        {{ form.date | add_class:'form-control col-2' }}
+    </div>
+    <div class="form-group">
+        <label>{{ form.title.label }}</label>
+        {{ form.title | add_class:'form-control col-2' }}
+    </div>
+    <div class="form-group">
+        <label>{{ form.text.label }}</label>
+        {{ form.text | add_class:'form-control col-2' }}
+    </div>
+    <input class="form-control col-1" type="submit" value="保存">
 </form>
 {% endblock %}

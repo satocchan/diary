@@ -1,9 +1,14 @@
 from datetime import datetime
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import TemplateView, CreateView, ListView, DetailView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from . import forms
 from . import models
+
+
+def redirect_index_view(request):
+    return redirect('diary:index')
+
 
 class IndexView(TemplateView):
     template_name = 'index.html'

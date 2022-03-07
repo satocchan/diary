@@ -1,0 +1,62 @@
+body{
+    background-color: antiquewhite;
+}
+.title_list{
+    text-align: center;
+    margin-top: 10px;
+}
+.diar_list{
+    margin-top: 10px;
+    margin-left: 510px;
+}
+.return_list{
+    margin-left: 625px;
+    font-size: 20px;
+}
+
+.h1_index{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.h2_index{
+    margin-top: 10px;
+    text-align: center;
+}
+.form-group{
+    text-align: center;
+}
+
+.col-1{
+    margin-left: 590px;
+}
+
+.col-2{
+    margin-left: 540px;
+}
+
+.return_complete{
+    margin-left: 615px;
+    font-size: 20px;
+}
+
+.p_complete{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.detail{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 570px;
+}
+
+.delete_p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.input_delete{
+    margin-left: 610px;
+}

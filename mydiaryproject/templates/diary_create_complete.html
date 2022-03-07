@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<p>日記の投稿が完了しました！</p>
-<a href="{% url 'diary:index' %}">トップへ戻る</a>
+<p class="p_complete">日記の投稿が完了しました</p>
+<a class="return_complete" href="{% url 'diary:index' %}">トップへ</a>
 {% endblock %}
